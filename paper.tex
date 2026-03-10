@@ -29,13 +29,12 @@
     Mazen Ahmed\textsuperscript{1},\;
     Belal Fathy\textsuperscript{1},\;
     Ammar Hassan\textsuperscript{1},\;
-    Abdullah Zain\textsuperscript{1},\;
-    Youssef Kamel\textsuperscript{1}
+    Abdullah Zain\textsuperscript{1}
   }
   \IEEEauthorblockA{
     \textsuperscript{1}Department of Computer Engineering,
     Alamein International University (AIU),
-    AIE418 -- Deep Learning, March 2026
+    AIE418 -- Selected Topics in AI 2, March 2026
   }
 }
 
@@ -45,7 +44,7 @@
 
 % ── Abstract ──────────────────────────────────────────────────
 \begin{abstract}
-Generative Adversarial Networks (GANs) have emerged as one of the most powerful frameworks for synthesising realistic images from learned distributions. This paper presents the design, implementation, and empirical evaluation of a \emph{Conditional} GAN (CGAN) trained on a two-class flower subset of the CIFAR-100 benchmark dataset, specifically the \emph{orchids} and \emph{roses} categories. The proposed architecture follows the Deep Convolutional GAN (DCGAN) paradigm: class conditioning is injected via learned embeddings in the generator and via spatially projected label maps in the discriminator. Training is carried out for 50 epochs, divided into 10 reporting cycles of five epochs each, on a dataset of 1{,}000 images (500 per class). Quantitative metrics --- discriminator scores $D(\mathbf{x})$, $D(G(\mathbf{z},y))$, and Binary Cross-Entropy (BCE) losses --- together with qualitative pixel-level statistics of generator outputs are analysed across all ten cycles. Results confirm a characteristic GAN training trajectory: aggressive early discrimination followed by incremental generator improvement and eventual approximate equilibrium. The generator ultimately produces class-conditional images with structured textures that are visually consistent with flower patterns.
+Generative Adversarial Networks (GANs) have emerged as one of the most powerful frameworks for synthezising realistic images from learned distributions. This paper presents the design, implementation, and empirical evaluation of a \emph{Conditional} GAN (CGAN) trained on a two-class flower subset of the CIFAR-100 benchmark dataset, specifically the \emph{orchids} and \emph{roses} categories. The proposed architecture follows the Deep Convolutional GAN (DCGAN) paradigm: class conditioning is injected via learned embeddings in the generator and via spatially projected label maps in the discriminator. Training is carried out for 50 epochs, divided into 10 reporting cycles of five epochs each, on a dataset of 1{,}000 images (500 per class). Quantitative metrics --- discriminator scores $D(\mathbf{x})$, $D(G(\mathbf{z},y))$, and Binary Cross-Entropy (BCE) losses --- together with qualitative pixel-level statistics of generator outputs are analysed across all ten cycles. Results confirm a characteristic GAN training trajectory: aggressive early discrimination followed by incremental generator improvement and eventual approximate equilibrium. The generator ultimately produces class-conditional images with structured textures that are visually consistent with flower patterns.
 \end{abstract}
 
 \begin{IEEEkeywords}
